@@ -8,14 +8,20 @@ const initialState = {
     counter : 0
 }
 
-const incrementAction = {
-    type : increment
+const incrementAction = () => {
+    return {
+        type : increment
+    }
 }
 
-const decrementAction = {
-    type : decrement
+const decrementAction = () => {
+    return {
+        type : decrement
+    }
 }
 
-const resetAction = {
-    type : reset
+const resetAction = () => {
+    return {
+        type : reset
+    }
 }
