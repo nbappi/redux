@@ -74,11 +74,11 @@ const getFetchData = () => {
          axios.get(URL)
               .then(function (response) {
                     // handle success
-                    console.log(response);
+                    dispatch(getProductsSuccess(response.data));
                 })
                 .catch(function (error) {
                     // handle error
-                    console.log(error);
+                    dispatch(getProductsFailed(error.message));
                 });
     }
 }
